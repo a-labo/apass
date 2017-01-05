@@ -1,0 +1,18 @@
+/**
+ * {{pkg.description}}
+ * @module {{pkg.name}}
+ */
+
+'use strict'
+
+const create = require('./create')
+const APass = require('./apass')
+
+let lib = create.bind(this)
+
+Object.assign(lib, APass, {
+  create,
+  APass
+})
+
+module.exports = lib
