@@ -9,10 +9,11 @@ const colorprint = require('colorprint')
 const apass = require('../lib')
 const { EOL } = require('os')
 
-let { APASS_VAULT, APASS_PASSWORD } = process.env
+let { APASS_VAULT, APASS_PASSWORD, APASS_REPO } = process.env
 
 const secrets = apass(APASS_VAULT, {
-  password: APASS_PASSWORD
+  password: APASS_PASSWORD,
+  repo: APASS_REPO
 })
 
 program
@@ -106,7 +107,7 @@ program
   }).catch(handleError))
 
 program
-  .command('bind [remote]')
+  .command('bind')
   .alias('Bind to remote git repo')
   .action((remote, options) => co(function * () {
     colorprint.info('Binding to remote git...')

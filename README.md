@@ -84,6 +84,8 @@ Usage
 # The password should be shared with team members beforehand.
 $ export APASS_PASSWORD=xxxxxxxx
 
+$ export APASS_REPO=git@github.com:my-account/my-vault-repo.git
+
 
 ### Read values ###
 
@@ -118,7 +120,7 @@ $ export APASS_PASSWORD="my_new_password"
 ### Sync with remote repo ###
 
 # Bind remote repo
-$ apass bind git@github.com:my-account/my-vault-repo.git
+$ apass bind
 
 # Pull from git
 $ apass pull

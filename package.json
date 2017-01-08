@@ -2,6 +2,7 @@
   "name": "apass",
   "version": "1.0.1",
   "description": "Password utility",
+  "bin": "bin/apass.js",
   "main": "lib",
   "scripts": {
     "test": "node ./ci/test.js",
