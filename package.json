@@ -1,6 +1,6 @@
 {
   "name": "apass",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Password utility",
   "bin": "bin/apass.js",
   "main": "lib",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/a-labo/apass#readme",
   "dependencies": {
+    "asfs": "^1.1.1",
     "askconfig": "^3.0.5",
     "cipherjson": "^2.1.0",
     "co": "^4.6.0",
